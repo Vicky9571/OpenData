@@ -1,0 +1,229 @@
+﻿
+
+<head>
+    <title>Data collection</title>
+    <script src="~/Content/js/jquery-1.4.2.min.js"></script>
+    <script src="~/Content/js/jquery.foggle.min.js"></script>
+
+    <link href="~/Content/css/zzsc.css" rel="stylesheet" />
+</head>
+
+  
+
+<body>
+
+    <div class="tab_box">
+        <img src="~/Content/image/111.png" width="100%" />
+ 
+    </div>  
+
+    <div class="Title">Data collection</div>
+    <div id='wrapper'>
+        <form  id="formdata" >
+            <div class="infoWrapper">
+                <div class="infoTitle"><label for="gender">Gender</label></div>
+                <div class="infoContent">
+                    <input type="radio" name='gender' class='gender' value='Female_county' /> Female
+                    <input type="radio" name='gender' class='gender' value='Male_county' /> Male
+                </div>
+            </div>
+            <div class="infoWrapper">
+                <div class="infoTitle"><label for="age">Age</label></div>
+                <div class="infoContent">
+                    <input type="radio" name='age' class='age' value='Age0_county' /> 18 - 24
+                    <input type="radio" name='age' class='age' value='Age1_county' /> 25 - 34
+                    <input type="radio" name='age' class='age' value='Age2_county' /> 35 - 44
+                    <input type="radio" name='age' class='age' value='Age3_county ' /> 45 - 54
+                    <input type="radio" name='age' class='age' value='Age4_county' /> 55 - 64
+                    <input type="radio" name='age' class='age' value='Age5_county' /> 65 or older
+                </div>
+            </div>
+            <div class="infoWrapper">
+                <div class="infoTitle"><label for="state">State</label></div>
+                <div class="infoContent">
+                    <select name="state" id="state" class='long jobsel state'>
+                        <option value="">---Select	---</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West">West</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="infoWrapper">
+                <div class="infoTitle"><label for='height'>Height:</label></div>
+                <div class="infoContent">
+                    <input type="text" name='height' id='height' class='input-text short' /><span>&nbsp;&nbsp;M</span>
+                </div>
+            </div>
+            <div class="infoWrapper">
+                <div class="infoTitle"><label for='weight'>Weight:</label></div>
+                <div class="infoContent">
+                    <input type="text" name='weight' id='weight' class='input-text short' /><span>&nbsp;&nbsp;KG</span>
+                </div>
+            </div>
+            <div class="infoWrapper">
+                <div class="infoTitle"><label for="income">Income</label></div>
+                <div class="infoContent">
+                    <input type="radio" name='income' class='income' value='Money0_county' /> Less_$15,000
+                    <input type="radio" name='income' class='income' value='Money1_county' /> $15,000-$24,999
+                    <input type="radio" name='income' class='income' value='Money2_county' /> $25,000-$34,999
+                    <input type="radio" name='income' class='income' value='Money3_county' /> $35,000-$49,999 </br>
+                    <input type="radio" name='income' class='income' value='Money4_county' /> $50,000-$74,999
+                    <input type="radio" name='income' class='income' value='Money5_county' /> More_$75,000
+
+                </div>
+            </div>
+
+            <div class="infoWrapper">
+                <div class="infoTitle"><label for="obese">Are you obese?</label></div>
+                <div class="infoContent">
+                    <input type="radio" name='isObese' class='obese' value='1' /> Yes
+                    <input type="radio" name='isObese' class='obese' value='0' /> No
+                </div>
+            </div>
+
+            <div class="infoWrapper">
+                <div class="infoTitle"><label for="diabetes">Do you have diabetes?</label></div>
+                <div class="infoContent">
+                    <input type="radio" name='isDiabetes' class='diabetes' value='1' /> Yes
+                    <input type="radio" name='isDiabetes' value='0' class='diabetes' /> No
+                </div>
+            </div>
+
+
+            <div class="infoWrapper">
+                <div class="infoTitle">&nbsp;</div>
+                <div><input type="checkbox" name='isDiabetes' class='diabetes' value='1' /> I allow my data to be collected and used by third parties</div>
+                <div class="infoContent">
+                    <div><input type="button" value='Submit' id="sb" /></div>
+                </div>
+            </div>
+
+        </form>
+
+        <!-- footer -->
+        <div id="footer"></div>
+        <!-- /footer -->
+
+    </div>
+    <div class="cen" id="divDisplay">
+   
+        <div class="content_dis">
+            <div class="loc">Your state of <span class="hb" id="disState"></span>:</div>
+
+
+            <div class="num"><span id="disGender"></span>get the risk of obesity is：<span id="genderRate" class="hb1"></span></div>
+            <div class="num"><span id="disAge"></span>get the risk of obesity is：<span id="ageRate" class="hb2"></span></div>
+            <div class="num"><span id="disMoney"></span>get the risk of obesity is：<span id="moneyRate" class="hb3"></span></div>
+            <div class="num">With your detail information, your BMI is：<span class="hb4" id="bmi"></span></div>
+            <div class="pos">You have the risk of obesity is: <span class="hb5" id="resultRate"></span></div>
+            <div class="pos">Predict the risk of obesity in your region by 2020: <span class="hb5" id="obRate"></span></div>
+
+
+
+
+
+            <div class="tips">Tips:</div>
+
+            <div class="atten">Please pay attention to your health and exercise regularly ！</div>
+            <input type="button"  value="Restart" id="restart"/>
+
+        </div>
+
+    </div>
+</body>
+</html>
+<script>
+    $(function() {
+        $("#divDisplay").hide();
+    })
+    $("#restart").click(function () {
+        $('#formdata')[0].reset();
+        $("#divDisplay").hide();
+        $("#wrapper").show();
+
+    })
+    $("#sb").click(function () {
+
+
+        $.ajax({
+            url: "/Home/SubmitData",
+            type: 'POST',
+            async: true,
+            dataType: 'json',
+            data: $('#formdata').serializeArray(), //
+            success: function (data) {
+                $("#divDisplay").show();
+                $("#wrapper").hide();
+                $("#genderRate").html(data.GenderRate+"%");
+                $("#ageRate").html(data.AgeRate + "%");
+                $("#moneyRate").html(data.MoneyRate + "%");
+                $("#disState").html(data.State);
+                $("#resultRate").html(data.ResultRate + "%");
+                $("#bmi").html(data.BMI);
+                $("#obRate").html(data.ObRate+"%");
+                $("#disGender").html("Gender is：" + $("input[name='gender']:checked")[0].nextSibling.nodeValue);
+                $("#disAge").html("Age for：" + $("input[name='age']:checked")[0].nextSibling.nodeValue);
+                $("#disMoney").html("Income range：" + $("input[name='income']:checked")[0].nextSibling.nodeValue);
+
+                //$(".dialogDiv").hide();
+                //if (resultData == "No") {
+                //    ShowFailTip("操作失败，请您重试！");
+                //} else if (resultData == "AA") {
+                //    $.jBox.tip('管理员不能操作', 'error'); $("#ddlregtype").find("option:selected").text();
+                //} else {
+                //    var data = $(resultData);
+
+                //}
+            }
+        });
+    });
+</script>
